@@ -1,9 +1,9 @@
 #importing the functions to test
 import unittest
-from update_mock_atm import init
+from mock_atm import init
 
 #start testing
-class Testupdate_mock_atm(unittest.TestCase):
+class Testmock_atm(unittest.TestCase):
     def test_basic(self):
         testcase = 1
         expected = login()
@@ -20,7 +20,6 @@ class Testupdate_mock_atm(unittest.TestCase):
         testcase = "."
         expected = "You have selected an invalid option"
         self.assertEqual(init(testcase), expected)
-"""run this code to test if it works with the update_mock_atm.py file, place them in thesame directory"""
 
-
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
